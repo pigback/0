@@ -1,0 +1,7 @@
+{
+	"name": "only chrome",
+
+	"build": {
+		"dockerfile": "Dockerfile"
+	}
+}
