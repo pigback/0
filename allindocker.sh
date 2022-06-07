@@ -2,12 +2,7 @@
 docker run -d -e PASSWORD=passwd -p 5900:5900 -p 3389:3389 --name chrome sfoxdev/chrome-vnc-rdp
 
 #chromium-only
-docker run -d \
-    --name=chromium \
-    -p 5800:5800 \
-    -v /docker/appdata/chromium:/config:rw \
-    --shm-size 2g \
-    overclockedllama/docker-chromium
+docker run -d --name=chromium -p 5800:5800 -v /docker/appdata/chromium:/config:rw --shm-size 2g overclockedllama/docker-chromium
 
 #android 12 - with - Samsung Galaxy S10
 #docker run --privileged -d -p 6080:6080 -p 5554:5554 -p 5555:5555 -e DEVICE="Samsung Galaxy S10" --name android-container budtmo/docker-android-x86-12.0
