@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+    ubuntu-xfce-vnc:
+        container_name: xfce
+        image: imlala/ubuntu-xfce-vnc-novnc:latest
+        shm_size: "3gb"
+        ports:
+            - 5900:5900
+            - 8080:6080
+        environment: 
+            - VNC_PASSWD=passwd
+            - GEOMETRY=1080x720
+            - DEPTH=24
+        volumes: 
+            - /tmp/Downloads:/root/Downloads
+            - /tmp/Documents:/root/Documents
+            - /tmp/Pictures:/root/Pictures
+            - /tmp/Videos:/root/Videos
+            - /tmp/Music:/root/Music
+            - ./:/root/Codespace
+        restart: always
