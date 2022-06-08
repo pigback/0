@@ -9,7 +9,7 @@ docker run -d --name=chromium -p 5800:5800 -v /docker/appdata/chromium:/config:r
 
 #docker-compose up -d
 #wine-x11-novnc
-docker run -p 8080:8080 -p 8081:22  -e LANG=zh_TW.UTF-8 -e LC_ALL=zh_TW.UTF-8 sykuang/wine-x11-novnc
+#docker run -p 8080:8080 -p 8081:22  -e LANG=zh_TW.UTF-8 -e LC_ALL=zh_TW.UTF-8 sykuang/wine-x11-novnc
 
 #macos-docker
 #Quickstart

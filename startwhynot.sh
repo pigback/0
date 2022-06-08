@@ -1,3 +1,3 @@
 sudo zerotier-one -d
-sudo vncserver :1
+sudo bt start
 sudo nethogs
