@@ -5,3 +5,4 @@ sudo zerotier-cli join
 sudo zerotier-cli listnetworks
 
 apt install nethogs
+apt install xdotool
