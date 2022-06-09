@@ -7,16 +7,16 @@ services:
         shm_size: "4gb"
         ports:
             - 5900:5900
-            - 8080:6080
+            - 5980:6080
         environment: 
             - VNC_PASSWD=passwd
             - GEOMETRY=1080x720
             - DEPTH=24
         volumes: 
-            - /tmp/Downloads:/root/Downloads
-            - /tmp/Documents:/root/Documents
-            - /tmp/Pictures:/root/Pictures
-            - /tmp/Videos:/root/Videos
-            - /tmp/Music:/root/Music
-            - ./:/root/Codespace
+            - /tmp/onedrive/codespace/xfceroot/Downloads:/root/Downloads
+            - /tmp/onedrive/codespace/xfceroot/Documents:/root/Documents
+            - /tmp/onedrive/codespace/xfceroot/Pictures:/root/Pictures
+            - /tmp/onedrive/codespace/xfceroot/Videos:/root/Videos
+            - /tmp/onedrive/codespace/xfceroot/Music:/root/Music
+            - /workspaces/spacest:/root/Codespace
         restart: always
