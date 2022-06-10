@@ -18,5 +18,7 @@ services:
             - /tmp/onedrive/codespace/xfceroot/Pictures:/root/Pictures
             - /tmp/onedrive/codespace/xfceroot/Videos:/root/Videos
             - /tmp/onedrive/codespace/xfceroot/Music:/root/Music
+            - /tmp/onedrive/codespace/xfceroot/Public:/root/Public
             - /workspaces/spacest:/root/Codespace
+            - /tmp:/root/Templates
         restart: always
