@@ -1,4 +1,4 @@
-sudo -i
+sudo -i 
 apt-get install fuse
 #sudo curl https://rclone.org/install.sh | sudo bash
 #这个文件是用来帮助我自动安装 macos-docker 的

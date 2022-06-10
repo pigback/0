@@ -2,7 +2,7 @@ sudo apt-get install language-pack-zh-han*
 sudo apt-get install ttf-mscorefonts-installer
 sudo apt-get install fontconfig
 LANG="zh_CN.UTF-8"
-locale
+locale 
 echo $LANG
 fc-list :lang=zh
 cp HarmonyOS.ttf /usr/share/fonts/
