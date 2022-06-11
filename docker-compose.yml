@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
     ubuntu-xfce-vnc:
-        container_name: xfce
+        container_name: ubuntu
         image: imlala/ubuntu-xfce-vnc-novnc:latest
         shm_size: "4gb"
         ports:
@@ -21,4 +21,29 @@ services:
             - /tmp/onedrive/codespace/xfceroot/Public:/root/Public
             - /workspaces/spacest:/root/Codespace
             - /tmp:/root/Templates
+        restart: always
+
+    xubuntu-xfce-novnc:
+        container_name: xubuntu
+        image: accetto/xubuntu-vnc-novnc-chromium:latest
+        shm_size: "4gb"
+        ports:
+            - 5901:5901
+            - 6901:6901
+        environment: 
+            - VNC_PW=headless
+            - VNC_RESOLUTION=1080x720
+            - VNC_COL_DEPTH=24
+            - LANG=zh_CN.UTF-8
+            - LC_ALL=zh_CN.UTF-8
+            - LANGUAGE=en_US:en
+        volumes: 
+            - /tmp/onedrive/codespace/xfceroot/Downloads:/home/headless/Downloads
+            - /tmp/onedrive/codespace/xfceroot/Documents:/home/headless/Documents/
+            - /tmp/onedrive/codespace/xfceroot/Pictures:/home/headless/Pictures
+            - /tmp/onedrive/codespace/xfceroot/Videos:/home/headless/Videos
+            - /tmp/onedrive/codespace/xfceroot/Music:/home/headless/Music
+            - /tmp/onedrive/codespace/xfceroot/Public:/home/headless/Public
+            - /workspaces/spacest:/home/headless/Codespace
+            - /tmp:/home/headless/Templates
         restart: always
