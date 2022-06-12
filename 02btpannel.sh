@@ -1,4 +1,5 @@
 #vscode start
+#wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh ed8484bec
 sudo bt start 
 sudo zerotier-one -d
 sudo /etc/init.d/nginx start
