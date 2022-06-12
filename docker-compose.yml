@@ -21,7 +21,7 @@ services:
             - /tmp/onedrive/codespace/xfceroot/Public:/root/Public
             - /workspaces/spacest:/root/Codespace
             - /tmp:/root/Templates
-        restart: always
+        #restart: always
 
     xubuntu-xfce-novnc:
         container_name: xubuntu
@@ -46,4 +46,4 @@ services:
             - /tmp/onedrive/codespace/xfceroot/Public:/home/headless/Public
             - /workspaces/spacest:/home/headless/Codespace
             - /tmp:/home/headless/Templates
-        restart: always
+        #restart: always
