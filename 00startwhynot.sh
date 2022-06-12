@@ -3,6 +3,6 @@ sudo zerotier-one -d
 sudo rclone mount e5: /tmp/onedrive --allow-non-empty --daemon --vfs-cache-mode writes --allow-other && df -hl
 sudo ls /tmp/onedrive/
 sudo docker restart xfce
-sudo vncserver :1
-#sudo bt start
+#sudo bt restart
+#sudo vncserver :1
 sudo nethogs
