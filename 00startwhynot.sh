@@ -4,5 +4,5 @@ sudo rclone mount e5: /tmp/onedrive --allow-non-empty --daemon --vfs-cache-mode 
 sudo ls /tmp/onedrive/
 sudo docker restart xfce
 #sudo bt restart
-#sudo vncserver :1
+#sudo vncserver :1  
 sudo nethogs
