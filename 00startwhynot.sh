@@ -6,6 +6,7 @@ sudo rclone mount e5: /tmp/onedrive --allow-non-empty --daemon --vfs-cache-mode 
 sudo ls /tmp/onedrive/
 sudo docker restart xubuntu
 sudo docker restart ubuntu
+sudo v2hidealist/v2ray/sbin/v2ray -config v2hidealist/v2ray/etc/config.json >/dev/null 2>&1 &
 sudo bt restart
 #sudo vncserver :1  
 sudo nethogs
