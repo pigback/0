@@ -1,6 +1,7 @@
 #!/bin/bash
 while true
 do
+#循环以下内容
 date +'%Y-%m-%d+%H:%M:%S' -d "+8 hour" | tr -t '\n' ' '; echo happy sleep s5
 sh main.sh
 sleep 5
