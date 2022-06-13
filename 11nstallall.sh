@@ -20,4 +20,4 @@ sudo rclone mount e5: /tmp/onedrive --allow-non-empty --daemon --vfs-cache-mode 
 #05文件为安装v2ray
 sudo sh 05v2rayinstall.sh
 #最后运行docker-compose
-sudo docker-compose up -d
+#sudo docker-compose up -d
