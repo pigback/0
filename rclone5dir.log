@@ -1,8 +1,0 @@
-BaseSystem.img
-Dockerfile
-ESP.qcow2
-MyDisk.qcow2
-README.md
-docker-compose.yml
-firmware/
-headless.sh
