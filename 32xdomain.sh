@@ -53,18 +53,19 @@ sleep 10
 xdotool key "Tab"
 #使用 xdotool 执行按键 Tab 补全Copilot想写的
 xdotool key "ctrl+s"
-xdotool search --name "space" key "shift+r"
 #使用 xdotool 执行按键 ctrl+s 保存
+xdotool search --name "space" key "shift+r"
+#使用 xdotool 执行按键 shift+r 刷新文件夹
 echo $id
 #输出一下pid（没啥用）当然你Copilot想不出来也没关系
 xdotool search --name "space" key "ctrl+s"
-date +'%Y-%m-%d+%H:%M:%S' -d "+8 hour" | tr -t '\n' ' '; echo happy sleep s300
+date +'%Y-%m-%d+%H:%M:%S' -d "+8 hour" | tr -t '\n' ' '; echo happy sleep s130
 sleep 130
 xdotool search --name "space" key "shift+r"
 xdotool search --name "space" key "ctrl+s"
-date +'%Y-%m-%d+%H:%M:%S' -d "+8 hour" | tr -t '\n' ' '; echo happy sleep end
+date +'%Y-%m-%d+%H:%M:%S' -d "+8 hour" | tr -t '\n' ' '; echo happy sleep s330
 xdotool search --name "space" key "shift+r"
 sleep 330
-date +'%Y-%m-%d+%H:%M:%S' -d "+8 hour" | tr -t '\n' ' '; echo happy sleep s300
+date +'%Y-%m-%d+%H:%M:%S' -d "+8 hour" | tr -t '\n' ' '; echo happy sleep end
 xdotool search --name "space" key "shift+r"
 done
