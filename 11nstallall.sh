@@ -14,8 +14,6 @@ sudo sh 10aptupdate.sh
 #sudo glances -w
 #安装mdserver-web
 #curl -fsSL  https://raw.githubusercontent.com/midoks/mdserver-web/master/scripts/install.sh | sudo bash
-#安装netdata监控
-apt-get install netdata -y
 #03文件为我安装rclone与fuse
 sudo curl https://rclone.org/install.sh | sudo bash && apt-get install fuse -y
 #使用rclone挂载我的onedrive
@@ -31,3 +29,5 @@ sudo rclone mount e5: /tmp/onedrive --allow-non-empty --daemon --vfs-cache-mode 
 sudo sh 05v2rayinstall.sh
 #最后运行docker-compose
 #sudo docker-compose up -d
+#安装netdata监控
+apt-get install netdata -y
