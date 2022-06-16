@@ -3,7 +3,8 @@
 #00文件为快速启动环境，服务等
 #01文件为安装zerotier,并使用环境变量加入我的网络
 sudo curl -s https://install.zerotier.com | sudo bash
-sudo zerotier-one -d && sudo zerotier-cli join ${ZERO}
+sudo zerotier-one -d 
+sudo zerotier-cli join ${ZERO}
 #在这之前我们先更新apt源
 sudo sh 10aptupdate.sh
 #02文件为我安装btpannel (x)
