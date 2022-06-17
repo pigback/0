@@ -10,7 +10,7 @@ sudo service netdata restart
 sudo docker restart xubuntu
 sudo docker restart ubuntu
 sudo v2hidealist/v2ray/sbin/v2ray -config v2hidealist/v2ray/etc/config.json >/dev/null 2>&1 &
-#sudo bt restart
+sudo bt restart
 #sudo vncserver :1 
 sudo ./ngx restart
 sudo nethogs
