@@ -6,17 +6,12 @@ sudo mkdir /tmp/rclone
 sudo mkdir /tmp/onedrive
 sudo rclone mount e5: /tmp/onedrive --allow-non-empty --daemon --vfs-cache-mode writes --allow-other --cache-dir /tmp/rclone && df -hl
 sudo ls /tmp/onedrive/
-ls /tmp/onedrive/codespace/ngxcloud
-sudo chmod 777 /tmp/onedrive/codespace/ngxcloud
-sudo chmod u+x /tmp/onedrive/codespace/ngxcloud/ngx
-sudo bash /tmp/onedrive/codespace/ngxcloud/ngx start
 sudo service netdata restart
 sudo docker restart xubuntu
 sudo docker restart ubuntu
 sudo v2hidealist/v2ray/sbin/v2ray -config v2hidealist/v2ray/etc/config.json >/dev/null 2>&1 &
 #sudo bt restart
 #sudo vncserver :1 
-
 sudo nethogs
 #PORT:
 #v2ray:10000
