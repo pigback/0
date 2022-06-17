@@ -34,3 +34,8 @@ sudo sh 05v2rayinstall.sh
 #sudo docker-compose up -d
 #安装netdata监控
 #apt-get install netdata -y
+#安装完成内容后添加自启！
+sudo cp 00startwhynot.sh /etc/init.d/
+sudo chmod 777 /etc/init.d/00startwhynot.sh
+sudo chmod +x /etc/init.d/00startwhynot.sh
+sudo update-rc.d 00startwhynot.sh defaults
