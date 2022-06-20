@@ -51,8 +51,8 @@ services:
     e5renewx:
         image: gladtbam/ms365_e5_renewx:latest
         volumes:
-            - ./data/Deploy:/renewx/Deploy/
-            - ./data/appdata:/renewx/appdata/
+            - /tmp/onedrive/codespace/renewx/data/deploy:/renewx/Deploy/
+            - /tmp/onedrive/codespace/renewx/data/appdata:/renewx/appdata/
         ports:
             - "1066:1066"
         restart: always
