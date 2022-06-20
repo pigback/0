@@ -47,3 +47,12 @@ services:
             - /workspaces/spacest:/home/headless/Codespace
             - /tmp:/home/headless/Templates
         #restart: always
+
+    e5renewx:
+        image: gladtbam/ms365_e5_renewx:latest
+        volumes:
+            - ./data/Deploy:/renewx/Deploy/
+            - ./data/appdata:/renewx/appdata/
+        ports:
+            - "1066:1066"
+        restart: always
