@@ -14,9 +14,9 @@ sudo bt 14 > 09firststart.md && sudo rm -rf install.sh
 #sudo glances -w
 #安装mdserver-web
 #curl -fsSL  https://raw.githubusercontent.com/midoks/mdserver-web/master/scripts/install.sh | sudo bash
-#安装ngx依赖/应用
-sudo apt install -y ffmpeg net-tools samba tgt nfs-kernel-server nfs-common
-sudo apt install -y netatalk avahi-daemon avahi-utils
+#安装ngx依赖/应用dis
+#sudo apt install -y ffmpeg net-tools samba tgt nfs-kernel-server nfs-common
+#sudo apt install -y netatalk avahi-daemon avahi-utils
 #03文件为我安装rclone与fuse
 sudo curl https://rclone.org/install.sh | sudo bash && apt-get install fuse -y
 #使用rclone挂载我的onedrive
