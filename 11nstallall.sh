@@ -22,7 +22,7 @@ sudo curl https://rclone.org/install.sh | sudo bash && apt-get install fuse -y
 #使用rclone挂载我的onedrive
 sudo mkdir /root/.config/ 
 sudo mkdir /tmp/onedrive/
-sudo mkdir /tmp/rclone
+sudo mkdir /tmp/rclone/
 sudo unzip -P ${PASSWD} rclone.zip -d /root/.config/rclone/
 sudo rclone lsf e5:/codespace/macos-docker/ > "rclone5dir.log"
 sudo rclone mount e5: /tmp/onedrive --allow-non-empty --daemon --vfs-cache-mode writes --allow-other --cache-dir /tmp/rclone && df -hl
@@ -34,8 +34,8 @@ sudo sh 05v2rayinstall.sh
 #sudo docker-compose up -d
 #安装netdata监控
 #apt-get install netdata -y
-#安装完成内容后添加自启！
-sudo cp 00startwhynot.sh /etc/init.d/
-sudo chmod 777 /etc/init.d/00startwhynot.sh
-sudo chmod +x /etc/init.d/00startwhynot.sh
-sudo update-rc.d 00startwhynot.sh defaults
+#安装完成内容后添加自启！(好像没啥用)
+#sudo cp 00startwhynot.sh /etc/init.d/
+#sudo chmod 777 /etc/init.d/00startwhynot.sh
+#sudo chmod +x /etc/init.d/00startwhynot.sh
+#sudo update-rc.d 00startwhynot.sh defaults
