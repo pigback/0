@@ -116,3 +116,21 @@ services:
             - /tmp/onedrive/codespace/alist:/opt/alist/data
             - /tmp/alist:/opt/alist/data/temp
             - /tmp/onedrive:/opt/alist/onedrive
+
+    cloudnas:
+        image: cloudnas/clouddrive
+        container_name: clouddrive
+        volumes:
+        - /tmp/cloudnas/nas:/CloudNAS:shared
+        - /tmp/cloudnas/config:/Config
+        - /tmp/cloudnas/tmp:/media:shared #optional media path of host
+        devices:
+        - /dev/fuse:/dev/fuse
+        restart: unless-stopped
+        pid: "host"
+        privileged: true #or you can try capp_add -SYS_ADMIN
+        #cap_add: #SYS_ADMIN cap may fail on some OSes, use privileged: true instead
+        # - SYS_ADMIN
+        #network_mode: "host" #if network_mode doesn't work, use port mapping
+        ports:
+           - 9798:9798

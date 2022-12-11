@@ -28,7 +28,8 @@ sudo v2hidealist/v2ray/sbin/v2ray -config v2hidealist/v2ray/etc/config.json >/de
 #sudo ./ngx restart
 #sudo nethogs
 fi
-sudo htop
+#sudo htop
+sudo iftop -P
 #PORT:
 #v2ray:10000
 #netdata:19999
